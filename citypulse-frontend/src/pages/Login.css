@@ -1,0 +1,61 @@
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(16, 185, 129, 0.1)), url('https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&q=80&w=2070') no-repeat center center/cover;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 2.5rem;
+    text-align: center;
+    /* Ensuring background blur is visually prominent on the background image */
+    background: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme='dark'] .auth-card {
+    background: rgba(31, 41, 55, 0.85);
+}
+
+.auth-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+.auth-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.auth-form {
+    text-align: left;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.auth-error {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--danger-color);
+    padding: 0.75rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.auth-redirect {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.auth-redirect a {
+    font-weight: 600;
+}
