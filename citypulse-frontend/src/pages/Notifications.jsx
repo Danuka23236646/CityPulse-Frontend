@@ -12,7 +12,7 @@ const Notifications = () => {
     useEffect(() => {
         fetchNotifications();
 
-        // Socket setup
+        // Socket setupppp
         const socket = io(SOCKET_BASE_URL);
         socket.on('connect', () => {
             if (user._id) {
