@@ -1,0 +1,173 @@
+.feedback-layout {
+  display: grid;
+  gap: 2rem;
+}
+
+.feedback-layout.is-citizen {
+  grid-template-columns: 2fr 1fr;
+}
+
+.feedback-layout.is-review-only {
+  grid-template-columns: 1fr;
+}
+
+.feedback-card {
+  border-left: 4px solid var(--primary-color);
+}
+
+.feedback-card-clickable {
+  cursor: pointer;
+}
+
+.feedback-card-clickable:hover {
+  border-left-color: var(--primary-hover);
+}
+
+.feedback-card-clickable:focus-visible {
+  outline: 3px solid rgba(79, 70, 229, 0.25);
+  outline-offset: 2px;
+}
+
+.feedback-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.feedback-author-wrap {
+  min-width: 0;
+}
+
+.feedback-author-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.feedback-author-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.feedback-issue-title {
+  margin-top: 0.15rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.feedback-rating-wrap {
+  flex-shrink: 0;
+}
+
+.feedback-edit-btn {
+  margin-left: 0.6rem;
+  padding: 0.22rem 0.6rem;
+  font-size: 0.75rem;
+}
+
+.feedback-reply-btn {
+  margin-left: 0.6rem;
+  padding: 0.22rem 0.6rem;
+  font-size: 0.75rem;
+}
+
+.feedback-delete-btn {
+  margin-left: 0.6rem;
+  padding: 0.22rem 0.6rem;
+  font-size: 0.75rem;
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+.feedback-delete-btn:hover {
+  background: #fef2f2;
+  border-color: #fca5a5;
+}
+
+.feedback-comment {
+  font-style: italic;
+  color: var(--text-main);
+}
+
+.feedback-date {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.feedback-reply-wrap {
+  font-size: 0.85rem;
+}
+
+.feedback-help-text {
+  font-size: 0.875rem;
+}
+
+.feedback-range-labels {
+  font-size: 12px;
+}
+
+.feedback-form-panel {
+  position: sticky;
+  top: 90px;
+  padding: 2rem;
+}
+
+.feedback-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;
+  padding: 1rem;
+}
+
+.feedback-edit-modal {
+  width: min(520px, 100%);
+}
+
+.feedback-reply-modal {
+  width: min(520px, 100%);
+}
+
+.feedback-delete-modal {
+  width: min(520px, 100%);
+}
+
+.feedback-delete-confirm-btn {
+  background: #dc2626;
+}
+
+.feedback-delete-confirm-btn:hover {
+  background: #b91c1c;
+}
+
+.feedback-anon-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-main);
+  font-size: 0.9rem;
+}
+
+.feedback-edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+
+@media (max-width: 1024px) {
+  .feedback-layout.is-citizen {
+    grid-template-columns: 1fr;
+  }
+
+  .feedback-form-panel {
+    position: static;
+    top: auto;
+  }
+}
